@@ -1,0 +1,577 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import "./scrollbar.css";
+
+#root {
+    overflow-x: hidden;
+    overflow-y:auto;
+    background-color: black;
+}
+
+.MainContainer {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #1f1f1f;
+    /*background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);
+    opacity: 0.8;*/
+    color: antiquewhite;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: 'Poiret One', serif;
+    letter-spacing: 0.005em;
+    text-align: justify;
+    /*-webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
+    /*-moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
+    /*box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.SecondaryContainer {
+    min-height: 60vh;
+    background-color: #1f1f1f;
+}
+
+.NavBarContainer {
+    background-color: black;
+    border-bottom:solid;
+    border-bottom-color:gold;
+    max-height: 200px;
+}
+.tastingBackground {
+    background-color: black;
+}
+
+.mainhome {
+    /*background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);*/
+
+    overflow-x: hidden;
+    overflow-y: auto
+}
+.tastingBackground {
+    /*background-image: url(https://media.scotchwhisky.com/images/media/b238feeb0fe7ea360414a6a5de49bd44.jpg);*/
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.aboutUsBackground {
+    /*background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);*/
+    background-color: black;
+}
+
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.whiskey_data_display_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 0.6em;
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+    padding: 2em;
+    z-index: 10;
+    animation: slide-left 0.5s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    
+    border: solid;
+    border-color: darkgoldenrod;
+}
+
+
+.data_display_image {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: goldenrod;
+    font-family: 'Poiret One', serif;
+    font-weight: normal;
+}
+
+
+.homeh1 {
+    color: goldenrod;
+    /*margin-left: 1em;*/
+    padding-top: 0.55em;
+    padding-bottom: 0.55em;
+    /* font-family: "Brush Script MT", cursive;         Still having issues rendering the right font for this - Wanted cursive. */
+    font-size: 2em;
+    font-family: 'Poiret One', serif;
+    font-weight: normal;
+}
+.homeh2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: goldenrod;
+    font-family: 'Poiret One', serif;
+    font-weight: normal;
+}
+.homeh3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: goldenrod;
+    font-family: 'Poiret One', serif;
+    font-weight: normal;
+}
+.homeh5 {
+    font-size: 1em;
+    font-weight: normal;
+    color: antiquewhite;
+    font-family: 'Poiret One', serif;
+    line-height: 1.7em;
+    text-align: justify;
+}
+
+.homep1 {
+    font-size: 1em;
+    padding-left: 10%;
+    font-family: 'Poiret One', serif;
+}
+
+.homep2 {
+    font-size: 1em;
+    padding-left: 5%;
+    font-family: 'Poiret One', serif;
+    color: goldenrod;
+    font-weight: normal;
+}
+
+.homeul {
+    padding-left: 18%;
+    font-size: 1em;
+    font-family: 'Poiret One', serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    grid-template-rows: auto auto 800px;
+    grid-template-areas:
+        "search intro update"
+        "search feature . "
+        "search feature . ";
+    row-gap: 75px;
+    padding-top: 15px;
+}
+
+.grid-item-2 {
+    padding-top: 2.2em;
+}
+.grid-item-3 {
+
+}
+.grid-item-4{
+    
+}
+.grid-item-5 {
+    /*margin: -20px;*/
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 25px;
+    padding-left: 2em;
+    padding-top: 1em;
+    background-color: black;
+}
+
+table{
+    border: 2px solid;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 1em;
+    color: #E0AA2B;
+    font-weight: normal;
+    font-family: 'Poiret One', serif;
+}
+.main-footer {
+    background-color: black;
+    opacity: 0.5;
+    margin-top: -5px;
+}
+.col {
+    font-family: 'Poiret One', serif;
+    color: goldenrod;
+    font-weight: normal;
+}
+.list-unstyled {
+    color: antiquewhite;
+    position: relative;
+    font-family: 'Poiret One', serif;
+    width: 100%;
+}
+.row {
+    font-family: 'Poiret One', serif;
+    color: goldenrod;
+    font-weight: normal;
+}
+.globalWrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1050px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.featuredTable{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+th1{
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/*Navbar Section*/
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: goldenrod !important;
+    font-family: 'Poiret One', serif;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+nav .navbar-nav li a {
+    color: antiquewhite !important;
+    font-family: 'Poiret One', serif;
+}
+
+.navLinkSpace{
+    padding-right: 8em;
+}
+nav .navbar-nav li a.active-link {
+    color: goldenrod !important;
+}
+    /*End of Navbar Section*/
+    /*Begin Footer Section*/
+    .main-footer{
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    font-size: 15px;
+    padding-left: 3em;
+    padding-right: 1em;
+    border-top-style: solid;
+}
+h4{
+    font-size: 15px;
+}
+a:link{
+    color: goldenrod;
+}
+a:visited{
+    color: #756300;
+}
+a:hover{
+    color:#FFED8A;
+}
+/*End Footer Section*/
+.container{
+    max-width: 100%;
+}
+.buttonClass input:focus ~ span:hover:before, .buttonClass input:focus ~ span:hover:after {
+    background-color: #790000;
+    transition: 0.4s;
+}
+.buttonClass input:focus ~ span {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.4s 0.4s;
+    cursor: pointer;
+}
+.buttonClass input:focus div {
+    transform: rotate(45deg) translateX(-100px);
+    opacity: 0;
+    transition: transform 0.4s 0s, opacity 0.2s 0.2s;
+}
+.buttonClass span:before {
+    transform: translateX(-50%) rotate(45deg);
+}
+.buttonClass span:after {
+    transform: translateX(-50%) rotate(-45deg);
+}
+.buttonClass span:before, .buttonClass span:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    left: 95%;
+    background-color: #ac0000;
+    top: 5%;
+    cursor: pointer;
+}
+/*.buttonClass{
+    display: flex;
+    justify-content: center;
+    float:right;
+}*/
+.buttonClass input + div {
+    width: 20px;
+    height: 2px;
+    background-color: transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    transform-origin: 100% 50%;
+    opacity: 1;
+    transition: transform 0.4s 0.4s, opacity 0.2s 0.4s;
+}
+.buttonClass input + div:before, .buttonClass input + div:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 4px;
+    background-color: #b5a642;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*TastingIntro Section*/
+
+.accordion dt {
+    border-bottom: 2px solid goldenrod;
+    padding: 10px 50px 10px 10px;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Poiret One', serif;
+    color: goldenrod;
+    font-weight: normal;
+}
+
+    .accordion dt:not(.open):hover div {
+        transform: translateY(calc(-50% + 5px));
+    }
+
+    .accordion dt.open + dd {
+        max-height: 1000px;
+        transition: 1s;
+    }
+
+    .accordion dt.open div {
+        transform: translateY(calc(-50% + 5px)) rotate(180deg);
+    }
+
+    .accordion dt div {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 15px;
+        transition: 0.5s;
+    }
+
+        .accordion dt div:before,
+        .accordion dt div:after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            left: 50%;
+            background-color: goldenrod;
+            top: 50%;
+        }
+
+        .accordion dt div:before {
+            content: '';
+            transform: translateX(calc(-50% - 3px)) rotate(45deg);
+        }
+
+        .accordion dt div:after {
+            content: '';
+            transform: translateX(calc(-50% + 3px)) rotate(-45deg);
+        }
+
+.accordion dd {
+    padding: 0;
+    margin: 0 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+    .accordion dd .inner {
+        padding: 10px 10px 10px 10px;
+    }
+
+.loading-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-name: l1;
+}
+
+    .loading div {
+        width: 50px;
+        height: 50px;
+        box-shadow: 0 0 0 2px goldenrod;
+        transform: rotate(45deg) translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform-origin: 0% 0%;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-duration: 2.5s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+    }
+
+        .loading div:nth-of-type(2) {
+            transform: rotate(45deg) translate(-60%, -60%);
+            animation-name: l2;
+        }
+
+@keyframes l1 {
+    0%, 50% {
+        transform: rotate(90deg);
+    }
+
+    50.001%, 100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes l2 {
+    0%, 10% {
+        transform: rotate(45deg) translate(-50%, -50%);
+    }
+
+    30%, 100% {
+        transform: rotate(45deg) translate(-60%, -60%);
+    }
+}
+
+@keyframes l3 {
+    0%, 30% {
+        transform: rotate(45deg) translate(-50%, -50%);
+    }
+
+    50%, 100% {
+        transform: rotate(45deg) translate(-40%, -40%);
+    }
+}
+
+@keyframes l4 {
+    0%, 50% {
+        opacity: 0;
+    }
+
+    70%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes l5 {
+    0%, 70% {
+        opacity: 0;
+    }
+
+    90%, 100% {
+        opacity: 1;
+    }
+}
+
+.loading div:nth-of-type(3) {
+    transform: rotate(45deg) translate(-40%, -40%);
+    animation-name: l3;
+}
+
+.loading div:nth-of-type(4) {
+    width: 3px;
+    height: 3px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    opacity: 0;
+    animation-name: l4;
+}
+
+.loading div:nth-of-type(5) {
+    width: 11px;
+    height: 11px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    opacity: 0;
+    animation-name: l5;
+}
+.a {
+    transition: 0.3s;
+}
+    
+
+        
+
+
+
+h7{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 22px;
+}
+#slideshow{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.slide.active {
+    opacity: 1;
+}
